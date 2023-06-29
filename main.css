@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* STYLES FOR NAVIGATION 
+<-------------------------------------------------------------------------------------------------------> */ 
+
+.navigation-bar {
+    filter: drop-shadow(0 -10px 20px rgb(170,170,170));
+    transition: 0.7s ease-in-out;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.996);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navigation-list {
+    display: flex;
+    width: 50%;
+}
+.navigation-list li {
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    list-style-type: none;
+}
+.nav-icons-links {
+    margin-top: 15px;
+    line-height: 3.1em;
+    text-align: center;
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+    max-width: 40%;
+}
+.nav-icons-links:hover {
+    color: black;
+    font-weight: 600;
+}
+.nav-icons-links:after {
+    background-color: rgb(64, 205, 245);
+    content: '';
+    height: 1.5px;
+    width: 0%;
+    transition: 0.5s ease-in-out;
+    display: block;
+}
+.nav-icons-links:hover:after {
+    width: 100%;
+}
+.openNavigationBar-mobile {
+    display: none; 
+    background-image: url("Images/Nav-Bar\ sand.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+#logo {
+    max-width: 190px;
+}
+#movingDown {
+   transform: translate3d(0,-100%,0);
+}
+#movingUp {
+   filter: drop-shadow(0 -10px 20px rgb(170,170,170));
+}
+#close {
+    display: flex !important;
+}
+#open {
+    display: flex !important;
+}
+
+/* STYLES FOR THE FIRST (main - landing) SECTION 
+<-------------------------------------------------------------------------------------------------------> */ 
+
+.landing-Section {
+   display: flex;
+   justify-content: center;
+   align-items: center;  
+   width: 100%;
+   height: 100vh;
+   background-color: rgba(0, 0, 0,0.6);
+}
+.landing-section-video {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+}
+.landing-section-mobile-img {
+   display: none;
+}
+#left-Panel {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    gap: 8%;
+    height: 100%;
+}
+#left-Panel h1 {
+    font-weight: 650;
+    margin-top: 100px;
+    width: 90%;
+    color: rgb(255, 255, 255);;
+}
+#right-Panel {
+    width: 50%;
+}
+#appointment {
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5vw;
+    border: 1px solid rgb(29, 101, 124);
+    border-radius: 5px;
+    height: 55px;
+    width: 30%;
+}
+#appointment:hover {
+    transform: scale(1.1);
+}
+.form-color {
+    color: rgb(54, 104, 195);
+}
+.phone-number {
+    text-decoration: none;
+}
+.phone-number:hover {
+    color: black;
+}
+
+/* STYLES FOR THE DETAIL SECTION
+<-------------------------------------------------------------------------------------------------------> */ 
+
+.detail-Section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   width: 100%;
+   background-image: url('Images/blue-grain-village-dental-edit2.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 80%;
+    border: 2px solid white;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.detail-right-panel {
+    gap: 10%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;   
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+}
+.detail-right-panel h1 {
+    background: linear-gradient(to bottom, #f9dc9d 22%,#e9bc6d 24%, #f7cc6e 26%, #edc162 27%,#f1c855 40%,#d8af5b 78%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.detail-left-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+#detail-left-panel-img {
+    background-image: url("Images/be_a_denist-removebg-preview.png");
+    background-size: cover;
+    background-repeat: round;
+    width:  500px;
+    height: 350px;
+}
+.detail-right-panel-offers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.detail-right-panel-offers-order {
+    padding: 7px;
+    font-size: 20px;
+    text-align: left;
+    width: 70%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.offers-order-img {
+    background-image: url("Images/list-image.png");
+    background-size: cover;
+    background-repeat: round;
+    width: 30px;
+    height: 30px;
+    margin-top: 1px;
+}
+.offers-order-txt {
+    width: 50%;
+}
+.detail-right-panel-button {
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5vw;
+    border: 1px solid rgb(230, 181, 57);
+    box-shadow: 1px 1px 1px 1px rgba(233, 164, 46, 0.7);
+    border-radius: 2px;
+    height: 45px;
+    width: 25%;
+}
+.detail-right-panel-button:hover {
+    background-color: transparent;
+    box-shadow: 1px 1px 1px 1px rgba(64, 220, 160, 0.7);
+    border: 1px solid rgb(115, 198, 135);
+}
+
+  
+/* STYLES FOR THE COUNTER
+<-------------------------------------------------------------------------------------------------------> */
+
+.counter-up{
+    min-height: 70vh;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .counter-up::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: round;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("Images/dentist-office-dental-clinic-practice-room-interior-stomatology-cabinet-orthodontist-workplace-with-modern-chair-equipped-with-integrated-engine-surgical-light-unit-cartoon-illustration_.avif")
+  }
+  .counter-up .content-up{
+    z-index: 1;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .counter-up .content-up .box{
+    background-color:rgba(24, 21, 21, 0.6);
+    border-radius: 10px;
+    width: calc(25% - 30px);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .content-up .box .c-icon{
+    font-size: 48px;
+    color: #e6e6e6;
+  }
+  .content-up .box .c-counter{
+    font-size: 50px;
+    font-weight: 500;
+    color: #f2f2f2;
+    font-family: sans-serif;
+  }
+  .content-up .box .c-text{
+    font-weight: 400;
+    color: #ccc;
+  }
+
+
+/* STYLES FOR THE TEAM SECTION  
+<-------------------------------------------------------------------------------------------------------> */ 
+
+.team-section {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 140vh;
+}
+#team-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+}
+#team-header h1 {
+    text-shadow: 1.5px 1.5px gray;
+    font-family: 'Open Sans', sans-serif;
+}
+.team-section-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 70%;
+}
+.profile-card {
+    background-color: #f7f6f6;
+    transition: 1s ease;
+    width: 360px;
+    height: 440px;
+}
+.profile-card:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    filter: drop-shadow(0 -10px 20px rgb(170,170,170));
+    box-shadow: 1px 1px rgba(193, 192, 192,0.6);
+}
+.profile-card h2 {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.profile-card h5 {
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    font-size: 1.05rem;
+}
+#pc1 {
+    height: 60%;
+    width: 100%;
+    background-image: url("Images/pc-1.png");
+    background-size: cover;
+    background-repeat: round;
+}
+#pc2 {
+    height: 60%;
+    width: 100%;
+    background-image: url("Images/pc-2.png");
+    background-size: cover;
+    background-repeat: round;
+}
+#pc3 {
+    height: 60%;
+    width: 100%;
+    background-image: url("Images/pc-3.png");
+    background-size: cover;
+    background-repeat: round;
+}
+/* STYLES FOR SERVICE SECTION 
+<------------------------------------------------------------------------------------------------------->  */
+.service-section {
+    padding-top: 155px;
+    width: 100%;
+    min-height: 100vh;
+}
+.service-header {
+    margin-bottom: 150px;
+}
+.grid-system {
+    padding: 5px;
+    gap: 5px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    min-height: 100vh;
+}
+.grid-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-color: rgba(52, 54,54,0.5);
+}
+.grid-col::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(52, 54,54,0.5);
+}
+.grid-col:hover::before {
+    display: none;
+}
+.grid-col:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(21, 152, 152, 0.9);
+    z-index: 4;
+}
+
+#ser-1 {
+    background-repeat: round;
+    background-size: cover;
+    background-image: url("/services/root-canal.jpg");
+}
+#ser-2 {
+    background-repeat: round;
+    background-size: cover;
+    background-image: url("/services/fillings.jpeg");
+}
+#ser-3 {
+    background-repeat: round;
+    background-size: cover;
+    background-image: url("/services/poliranje.jpg");
+}
+#ser-4 {
+    background-repeat: round;
+    background-size: cover;
+    background-image: url("/services/protetika.jpg");
+}
+#ser-5 {
+    background-repeat: round;
+    background-size: cover;
+    background-image: url("/services/1024.jpeg");
+}
+#ser-6 {
+    background-repeat: round;
+    background-size: cover;
+    background-image: url("/services/bonding.jpg");
+}
+#ser-7 {
+    background-repeat: round;
+    background-size: cover;
+    background-image: url("/services/laser.jpg");
+}
+#ser-8 {
+    background-repeat: round;
+    background-size: cover;
+    background-image: url("/services/oral-surgery.jpg");
+}
+#ser-9 {
+    background-repeat: round;
+    background-size: cover;
+    background-image: url("/services/smile-d.jpg");
+}
+.grid-col h1 {
+    z-index: 6;
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    color: white;
+}
+/* STYLES FOR LOCATION SECTION 
+<------------------------------------------------------------------------------------------------------->  */
+
+.location-section {
+    gap: 10%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+.location-section h1 {
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-weight: 600;
+    text-shadow: 1.5px 1.5px gray;
+    font-family: 'Montserrat', sans-serif;
+}
+.location-section h6 {
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+.carousel-item {
+    background-color: rgb(44, 72, 75);
+    height: 65vh;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+}
+.carousel-control-prev-icon {
+    background-image: url("Images/left-slider.svg") !important;
+}
+.carousel-control-next-icon {
+    background-image: url("Images/left-slider.svg") !important;
+    transform: scale(-1);
+}
+#slide-one {
+    background-color: black  !important;
+}
+#slide-two {
+    background-color: black !important; 
+}
+
+/* STYLES FOR FOOTER SECTION 
+ <-------------------------------------------------------------------------------------------------------> */
+
+.f-card {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#insta {
+    display: block;
+    transition: 0.5s ease;
+    width: 25px;
+    height: 25px;
+    background-image: url("Images/instagram.svg");
+    background-size: cover;
+    background-position: round;
+}
+
+#faceb {
+    display: block;
+    transition: 0.5s ease;
+    width: 25px;
+    height: 25px;
+    background-image: url("Images/facebook.svg");
+    background-size: cover;
+    background-position: round;
+}
+
+#faceb:hover {
+    transform: scale(1.1);
+}
+
+#insta:hover {
+    transform: scale(1.1);
+}
+

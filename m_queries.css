@@ -1,0 +1,518 @@
+@media (max-width: 1400px) {
+    #first-left {
+        margin-left: 140px !important;
+      }
+    .detail-right-panel h1 {
+        font-size: 30px;
+    }
+}
+@media (max-width: 1200px) {
+    #first-left {
+        margin-left: 110px !important;
+      }
+    .offers-order-img {
+        margin-top: 5px;
+    }
+    .profile-card {
+        width: 350px;
+        height: 390px;
+    }
+    #detail-left-panel-img {
+        height: 300px;
+        width: 400px;
+    }
+}
+@media (max-width: 1100px) {
+    #first-left {
+        margin: 0 0 40px 0 !important;
+      }
+}
+@media (max-width: 1000px) {
+    .counter-up{
+        padding: 50px 50px 0 50px;
+      }
+      .counter-up .content-up .box{
+        width: calc(50% - 30px);
+        margin-bottom: 50px;
+      }
+    .detail-right-panel h1 {
+        font-size: 25px;
+    }
+    .detail-right-panel-offers-order {
+        font-size: 15px;
+    }
+    #appointment {
+        height: 65px;
+        width: 40%;
+    }
+    .offers-order-img {
+        margin-top: 0;
+    }
+    .profile-card {
+        width: 300px;
+        height: 390px;
+    }
+    .profile-card h2 {
+        font-size: 1rem;
+    }
+    .profile-card h5 {
+        font-size: 0.8em;
+    }
+    #detail-left-panel-img {
+        height: 250px;
+        width: 300px;
+    }
+}
+@media (max-width: 950px) {
+    .profile-card {
+        width: 250px;
+        height: 390px;
+    }
+}
+@media (max-width: 900px) {
+    #first-left {
+        margin: 0 0 10px 0 !important;
+      }
+    .landing-section-video {
+      min-width: 100%;
+      height: auto;
+    }
+    .team-section-container {
+        align-items: center;
+        height: 80%;
+        flex-direction: column;
+    }
+    .team-section {
+        height: 260vh;
+    }
+    #team-header {
+        height: 20%;
+    }
+    .profile-card {
+        width: 350px;
+        height: 390px;
+    }
+    .profile-card h2 {
+        font-size: 1.1rem;
+    }
+    .profile-card h5 {
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 835px) {
+    .grid-system {
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      }
+}
+@media (max-width: 800px) {
+    #fix-div {
+        width: 190px !important;
+    }
+    #first-left {
+        margin-left: 0 !important;
+      }
+    html.touch *:hover {
+        all:unset!important;
+    }
+    .landing-Section {
+        background-color: rgba(0, 0, 0,0.6) !important;
+    }
+    .detail-container {
+        flex-direction: column-reverse;
+        width: 87%;
+        height: 90%;
+    }
+    #detail-left-panel-img {
+        width: 350px;
+        height: 250px;
+    }
+    .detail-Section {
+        height: 120vh;
+    }
+    .detail-left-panel {
+        height: 60%;
+    }
+    .nav-icons {
+        margin-left: 30px;
+    }
+    .nav-icons-links:after {
+        background-color: white;
+    }
+    .nav-icons-links {
+        margin-top: 0px;
+    }
+    .landing-Section{
+        flex-direction: column;
+    }
+    #detailSVG {
+        background-image: url('Images/detail.svg');
+        background-size:cover;
+        background-position: no-repeat;
+        width: 30px;
+        height: 30px;
+    }
+    #teamSVG {
+        background-image: url('Images/team.svg');
+        background-size:cover;
+        background-position: no-repeat;
+        width: 30px;
+        height: 30px; 
+    }
+    #gallerySVG {
+        background-image: url('Images/gallery.png');
+        background-size:cover;
+        background-position: no-repeat;
+        width: 30px;
+        height: 30px; 
+    }
+    .detail-right-panel-button {
+        width: 30%;
+        font-size: 20px;
+    }
+    #contactSVG {
+        background-image: url('Images/contact.svg');
+        background-size:cover;
+        background-position: no-repeat;
+        width: 30px;
+        height: 30px;
+    }
+    #locationSVG {
+        background-image: url('Images/location.svg');
+        background-size:cover;
+        background-position: no-repeat;
+        width: 30px;
+        height: 30px;
+    }
+    #serviceSVG {
+        background-image: url('Images/services.svg');
+        background-size:cover;
+        background-position: no-repeat;
+        width: 30px;
+        height: 30px;
+    }
+    #appointment {
+        font-size: 2.3vw;
+        width: 45%;
+    }
+    .right-Panel {
+        display: none;
+    }
+    .navigation-bar {
+        position: fixed;
+        justify-content: space-around;
+    }
+    .openNavigationBar-mobile {
+        display: flex;
+    }
+    .navigation-list {
+        padding-left: 0;
+        background-color: rgb(255, 255, 255);
+        width: 45%;
+        justify-content: space-evenly;
+        right: 0;
+        top: 95px;
+        position: absolute;
+        flex-direction: column;
+    }
+    .navigation-list li {
+        margin-bottom: 30px;
+        justify-content: left;
+        gap: 20px;
+    }
+    .navigation-list li:first-child {
+        margin-top: 20px;
+    }
+    .nav-icons-links {
+        font-size: 0.9rem;
+        width: 40%;
+    }
+    .nav-icons {
+        width: 25px !important;
+        height: 25px !important;
+    }
+    #close {
+        display: none !important;
+    }
+    #open {
+        justify-content: space-evenly;
+        right: 0;
+        top: 81px;
+        position: absolute;
+        flex-direction: column;
+    }
+}
+@media (max-width: 700px) {
+    #first-left {
+        margin-left: 0px !important;
+      }
+    .footer-section {
+        height: 150vh;
+    }
+    .footer-section-container {
+        text-align: left;
+        justify-content: center;
+        align-items: left !important;
+        flex-direction: column;
+    }
+    .footer-section-card {
+        height: 40%;
+        width: 80%;
+    }
+    #footer-section-card-third {
+        justify-content: space-around;
+        align-items: center;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+    }
+    #footer-section-card-third a {
+        margin-bottom: 0;
+    }
+    #footer-section-card-third a:first-child {
+        margin-top: 0;
+    }
+    .profile-card {
+        width: 330px;
+        height: 400px;
+    }
+    .profile-card h2 {
+        font-size: 1rem;
+    }
+    .profile-card h5 {
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 650px) {
+    #first-left {
+        margin: 0 0 50px 0 !important;
+      }
+}
+@media (max-width: 580px) {
+    .counter-up .content-up .box{
+        width: 100%;
+      }
+      #first-left {
+        margin: 0 0 50px 0 !important;
+      }
+    .fixcol {
+        margin: 0 0 50px 0 !important;
+      }
+    .fix-pos {
+        min-height: 55em !important;
+    }
+}
+@media (max-width: 500px) {
+    .navigation-list {
+        width: 100% !important;
+    }
+    .navigation-list li {
+        gap: 0;
+        justify-content: center;
+    }
+    .counter-up{
+        padding: 30px 20px 0 20px;
+      }
+    .navigation-list {
+        width: 60%;
+    }
+    .profile-card h2 {
+       font-size: 1.2rem;
+    }
+    .profile-card h5 {
+        font-size: 0.8rem;
+    }
+    .profile-card {
+        width: 310px;
+        height: 450px;
+    }
+    .detail-right-panel-button {
+        font-size: 5vw;
+    }
+    .detail-Section {
+        height: 130vh;
+    }
+    .detail-container {
+        padding: 10px;
+    }
+    .detail-right-panel h1 {
+        width: 80%;
+    }
+    .nav-icons {
+        width: 25px !important;
+        height: 25px !important;
+    }
+    .landing-Section {
+         flex-direction: column;
+    }
+    .location-section h6 {
+        font-size: 0.8rem !important;
+    }
+    .right-Panel {
+        display: none;
+    }
+    #appointment {
+        width: 40%;
+        font-size: 3.5vw;
+    }
+    #left-Panel {
+        width: 90%;
+    }
+    #left-Panel h1 {
+        width: 70%;
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin-top: 1px;
+    }
+}
+@media (max-width: 450px) {
+    .contents-reserved {
+        font-size: 1rem;
+    }
+    .navigation-list {
+       padding-left: 2rem;
+        width: 60%;
+    }
+    .nav-icons-links {   
+        font-size: 1rem;
+    }
+    .nav-icons {
+        width: 25px !important;
+        height: 25px !important;
+        margin-left: 10px;
+    }
+    .profile-card h2 {
+        font-size: 1rem;
+     }
+     .profile-card h5 {
+         font-size: 0.9em;
+     }
+}
+@media (max-width: 390px) {
+    .profile-card {
+        width: 280px;
+        height: 350px;
+    }
+}
+@media (max-width: 340px) {
+    .navigation-list {
+        width: 70%;
+    }
+    #left-Panel h1 {
+        font-size: 1.2rem;
+    }
+    .nav-icons-links {
+    
+        font-size: 0.8rem;
+    }
+    .nav-icons {
+        width: 20px !important;
+        height: 20px !important;
+        margin-left: 10px;
+    }
+    #detail-left-panel-img {
+        width: 260px;
+        height: 180px;
+    }
+}
+@media (max-width: 300px) {
+    .profile-card {
+        width: 250px;
+        height: 300px;
+    }
+}
+
+ /* MEDIA QUERIES FOR HEIGHT 
+  -------------------------------------------------------------------------------------------> */
+@media (max-height: 1300px) {
+   
+} 
+@media (max-height: 720px) {
+    .footer-section {
+        height: 190vh;
+    }
+}
+@media (max-height: 600px) {
+    .detail-Section {
+        height: 150vh;
+    }
+    .profile-card {
+        width: 40%;
+    }
+    .carousel-item {
+        height: 80vh;
+    }
+}
+@media (max-height: 500px) {
+    .landing-Section {
+        height: 99vh;
+    }
+    .footer-section {
+        height: 150vh;
+    }
+    .team-section {
+        height: 400vh;
+    }
+    .carousel-item {
+        height: 100vh;
+    }
+    .detail-Section {
+        height: 200vh;
+    }
+    .profile-card {
+        width: 40%;
+    }
+    .location-section {
+        height: 50vh;
+    }
+    .landing-section-video {
+        width: 100vw;
+        height: 200vh;
+        right: unset;
+        bottom: unset;
+    }
+    #left-Panel h1 {
+        font-size: 1.5rem;
+    }
+}
+@media (max-height: 450px) {
+    .team-section-container {
+        gap: 3%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .team-section {
+        justify-content: unset;
+        height: 450vh;
+       }
+    #team-header {
+        height: 20%;
+    }
+}
+@media (max-height: 400px) {
+    .landing-Section {
+       height: 120vh;
+    }
+    .landing-section-mobile-img {
+       height: 200vh;
+    }
+    .footer-section {
+     height: 300vh;
+    }
+    .carousel-item  {
+    height: 100vh;
+    }
+    .team-section {
+     height: 450vh;
+    }
+    .detail-Section {
+        height: 200vh;
+    }
+    .profile-card {
+        width: 40%;
+    }
+    .detail-right-panel h1 {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.grid {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.picture-grid {
+    width: 80vw;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+.grid-box img{
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+}
+.gallery-head {
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 800px) {
+    .gallery-head {
+        height: 30vw;
+    }
+}
+@media (max-width: 500px) {
+    .gallery-head {
+        height: 60vw;
+    }
+    .picture-grid {
+        width: 90vw;
+    }
+}
+@media (max-width: 300px) {
+    .picture-grid {
+        width: 100vw;
+    }
+}
